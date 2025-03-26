@@ -30,6 +30,8 @@ empty_fig = px.choropleth(pd.DataFrame([]))
 
 app = Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     html.H1('World Cup Finals Data', style={'text-align':'center'}),
     dcc.RadioItems(
