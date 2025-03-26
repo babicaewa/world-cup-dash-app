@@ -2,6 +2,7 @@ from dash import Dash, html, dcc, callback, Output, Input, dcc
 import plotly.express as px
 from plotly.graph_objs import *
 import pandas as pd
+import os
 
 countries_df = pd.read_csv('data/countries.csv')            #loading all dataframes and formatting
 
